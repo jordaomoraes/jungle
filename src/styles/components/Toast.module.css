@@ -1,0 +1,17 @@
+/* Toast Configuration */
+.message{
+  margin-top: 1.2rem;
+  background: var(--background-color);
+  color: var(--text-color);
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.barra{
+  background: var(--primary-color);
+}
+
+.barraErro{
+  background: var(--error-color);
+}
