@@ -10,7 +10,6 @@ const ExperimentProvider = ({ experimentVariant, children }) => {
 
   useEffect(() => {
     const storedVariant = localStorage.getItem(storageKey)
-
     if (storedVariant) {
       setVariant(JSON.parse(storedVariant))
     } else {

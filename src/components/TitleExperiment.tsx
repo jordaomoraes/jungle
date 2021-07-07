@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 
 import { ExperimentContext } from '../contexts/experiment'
+import variant from '../libs/getRandomVariant'
 
 const TitleExperiment = () => {
   const { variant } = useContext(ExperimentContext)

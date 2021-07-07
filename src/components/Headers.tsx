@@ -1,9 +1,21 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { useState } from 'react'
+import variants from "../../variant.json"
 
 import styles from '../styles/components/Header.module.css'
 
 const Header = ({ children }) => {
+
+  const [varients, setVarients] = useState(null)
+
+  function startNewChallenge() {
+    const randomVariantIndex = Math.floor(Math.random() * 2);
+    const variant = variants[randomVariantIndex];
+    setVarients(variant)
+    console.log(randomVariantIndex)
+    console.log(variants[randomVariantIndex])
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.badgeContainer}>
@@ -18,6 +30,7 @@ const Header = ({ children }) => {
       <section className={styles.loginArea}>
         <a>Become a Nanny Share Host</a>
 
+  
         <a>Sign In</a>
 
       </section>

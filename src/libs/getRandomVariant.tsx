@@ -16,11 +16,8 @@ const variants = [
     },
   },
 ]
-
 const getRandomVariant = () => {
   const randomIndex = Math.round(Math.random())
-
   return variants[randomIndex]
 }
-
 export default getRandomVariant

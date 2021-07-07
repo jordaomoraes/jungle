@@ -5,8 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import api from '../services/api';
 import notifications from '../utils/notify';
 const Newsletter = () => {
-  // toast.success("aaahh funcinou")
-
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

@@ -5,7 +5,7 @@ export default class MyDocument extends Document{
     return(
       <Html>
         <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
             rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet"></link>
@@ -16,7 +16,7 @@ export default class MyDocument extends Document{
           <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-        </Head>
+          </Head>
         <body>
           <Main />
           <NextScript />        
