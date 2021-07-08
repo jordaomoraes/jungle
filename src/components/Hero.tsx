@@ -9,7 +9,7 @@ const Hero = () => {
   const [title, setTitle] = useState(null); 
   const [desc, setDesc] = useState(null); 
   
-  let randomVariantIndex=0;
+ let randomVariantIndex=0;
   
 
   useEffect(() => {
@@ -18,6 +18,7 @@ const Hero = () => {
   }, [])
 
     function randonText() {
+   
     randomVariantIndex = Math.floor(Math.random() * 2);  
     setTitle(Titles[randomVariantIndex].data.title)
     setDesc(Titles[randomVariantIndex].data.description)
@@ -30,8 +31,8 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.content}>
         <div className={styles.contentColumn}>
-          <h1>{Titles[randomVariantIndex].data.title}</h1>
-          <h2>{Titles[randomVariantIndex].data.description}</h2>
+          <h1>{title}</h1>
+          <h2>{desc}</h2>
           <button onClick={randonText}>Teste</button>
           <Link href="#">
             <a className={styles.actionCall}>
