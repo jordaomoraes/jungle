@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    Project - Hapu's Nanny Share (Jungle Devs's React Challenge)
+</h1>
 
-## Getting Started
+  ## Prerequisites
 
-First, run the development server:
+Before you start, you need to install the following tools on your computer:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [yarn](It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system. run at cmd : npm install --global yarn)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Running the application in development mode
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Clone this repository
+$ https://github.com/jordaomoraes/jungle
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Access the project folder
+$ cd jungle
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Install the project dependencies
+$ yarn install
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# The application will open in port:3006 - open http://localhost:3006 in your browser
