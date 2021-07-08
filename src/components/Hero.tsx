@@ -1,51 +1,60 @@
 import Image from 'next/image'
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
-import { useState } from 'react'
-import VarTexts from "../../variant.json"
-
-import TitleExperiment from './TitleExperiment'
-
+import Titles from "../../titles.json"
 import styles from '../styles/components/Hero.module.css'
 
 const Hero = () => {
-  // const [varients, setVarients] = useState(null);
-  //  function randonText()
-  // {
-  //  const randomVariantIndex = Math.floor(Math.random() * 2);
-  //  const variant = VarTexts[randomVariantIndex];
-  //  setVarients(variant)
-  //  console.log(randomVariantIndex)
-  //  console.log(varients[randomVariantIndex])
-  // }
-return (
-  <section className={styles.hero}>
-    <div className={styles.content}>
-      <div className={styles.contentColumn}>
-    {/* <h1>{varients.data.title}</h1>
-      <h2>{varients.data.description}</h2>   */}
-        <button onClick={randonText}>Teste</button>
+
+  const [title, setTitle] = useState(null); 
+  const [desc, setDesc] = useState(null); 
+  
+  let randomVariantIndex=0;
+  
+
+  useEffect(() => {
+    console.log("chegou aqui")
+    randonText();  
+  }, [])
+
+    function randonText() {
+    randomVariantIndex = Math.floor(Math.random() * 2);  
+    setTitle(Titles[randomVariantIndex].data.title)
+    setDesc(Titles[randomVariantIndex].data.description)
+    console.log(randomVariantIndex)
+    console.log(Titles[randomVariantIndex].data.title)
+  }
+
+ 
+  return (
+    <section className={styles.hero}>
+      <div className={styles.content}>
+        <div className={styles.contentColumn}>
+          <h1>{Titles[randomVariantIndex].data.title}</h1>
+          <h2>{Titles[randomVariantIndex].data.description}</h2>
+          <button onClick={randonText}>Teste</button>
           <Link href="#">
-          <a className={styles.actionCall}>
-            <Image
-              src="/assets/icons/play-button.svg"
-              alt="Play button"
-              width={48}
-              height={48}
-            />
-            <span>See hapu in action (27 seconds)</span>
-          </a>
-        </Link>
+            <a className={styles.actionCall}>
+              <Image
+                src="/assets/icons/play-button.svg"
+                alt="Play button"
+                width={48}
+                height={48}
+              />
+              <span>See hapu in action (27 seconds)</span>
+            </a>
+          </Link>
+        </div>
+        <div className={styles.contentColumn}>
+          <Image
+            src="/assets/images/header-image.png"
+            alt="Nanny Share Example"
+            width={316}
+            height={290}
+          />
+        </div>
       </div>
-      <div className={styles.contentColumn}>
-        <Image
-          src="/assets/images/header-image.png"
-          alt="Nanny Share Example"
-          width={316}
-          height={290}
-        />
-      </div>
-    </div>
-  </section>
-)
-    }
+    </section>
+  )
+}
 export default Hero
