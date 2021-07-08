@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/components/Newsletter.module.css'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import api from '../services/api';
 import notifications from '../utils/notify';

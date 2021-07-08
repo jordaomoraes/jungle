@@ -6,42 +6,27 @@ import Payments from '../components/Payments'
 import Framework from '../components/Framework'
 import CommingSoon from '../components/CommingSoon'
 import Booking from '../components/Booking'
-import ExperimentProvider from '../contexts/experiment'
 import getRandomVariant from '../libs/getRandomVariant'
 import styles from '../styles/components/Home.module.css'
 
 const Home = ({ experimentVariant }) => (
-  <Layout
-    pageTitle={experimentVariant.data.title}
-    description={experimentVariant.data.description}
+  <Layout  
   >
-    <ExperimentProvider experimentVariant={experimentVariant}>
-      <Hero />
-    </ExperimentProvider>
-
+    <Hero />
     <main className={styles.main}>
       <Booking />
       <ShareHome />
       <hr className={styles.divider} />
       <NewsLetter />
       <hr className={styles.divider} />
-      <Payments />      
+      <Payments />
       <hr className={styles.divider} />
       <Framework />
       <hr className={styles.divider} />
-      <CommingSoon />       
+      <CommingSoon />
     </main>
   </Layout>
 )
 
-export const getServerSideProps = () => {
-  const experimentVariant = getRandomVariant()
-
-  return {
-    props: {
-      experimentVariant,
-    },
-  }
-}
 
 export default Home

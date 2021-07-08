@@ -35,19 +35,23 @@
   cursor: pointer;
 }
 
-.loginArea > a :nth-child(2){
-  display: none;
-}
+
 
 @media only screen and (min-width: 360px) {
   .header {
     padding: 0 2rem;
   }
+  .loginArea a + a {
+    display: none;
+   }
 } 
 
  @media only screen and (min-width: 900px) {
   .loginArea {
     margin: 0 1rem 0 auto;
+  }
+  .loginArea a + a {
+   display: none;
   }
 
   

@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import styles from '../styles/components/Booking.module.css'
 
 const Booking = () => {

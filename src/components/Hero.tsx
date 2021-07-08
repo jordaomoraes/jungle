@@ -10,15 +10,11 @@ const Hero = () => {
   const [desc, setDesc] = useState(null);
 
   let randomVariantIndex = 0;
-
-
-  useEffect(() => {
-    console.log("chegou aqui")
+  useEffect(() => {  
     randonText();
   }, [])
 
   function randonText() {
-
     randomVariantIndex = Math.floor(Math.random() * 2);
     setTitle(Titles[randomVariantIndex].data.title)
     setDesc(Titles[randomVariantIndex].data.description)

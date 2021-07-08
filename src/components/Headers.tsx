@@ -1,12 +1,8 @@
 import Image from 'next/image'
 
-
 import styles from '../styles/components/Header.module.css'
 
 const Header = ({ children }) => {
-
-
- 
 
   return (
     <header className={styles.header}>
@@ -20,11 +16,8 @@ const Header = ({ children }) => {
       </div>
       {children}
       <section className={styles.loginArea}>
-        <a>Become a Nanny Share Host</a>
-
-  
+        <a>Become a Nanny Share Host</a>  
         <a>Sign In</a>
-
       </section>
     </header>
   )
