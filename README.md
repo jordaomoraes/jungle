@@ -2,7 +2,6 @@
     Project - Hapu's Nanny Share
 </h1>
 
-  ## Prerequisites
 
 Before you start, you need to install the following tools on your computer:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [yarn](It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system. run at cmd : npm install --global yarn)
